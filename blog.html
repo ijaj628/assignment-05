@@ -10,36 +10,59 @@
 </head>
 
 <body>
-    <section class="mt-10 ml-10 mr-20">
-        <div class="collapse collapse-arrow bg-base-200 mb-5">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
-            <div class="collapse-content">
-                <p>Document Object Model is a programming method that use for programming interface for web documents.It give the structure of a webpage as a tree of objects.</p>
+    <header class="bg-orange-50">
+        <nav class="flex gap-6 lg:gap-96 justify-center pt-6 pb-12 mb-8">
+            <button id="btn-home" class="font-bold bg-lime-400 px-6 rounded">Home</button>
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h2 class="font-semibold">Donate Bangladesh</h2>
             </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200 mb-5">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-            <div class="collapse-content">
-                <p>We can select an element form DOM using the attributes 'getElementById', 'getElementsByClassName', 'getElementsByTagName', 'querySelector', 'querySelectorAll' etc.</p>
+            <div class="flex items-center gap-2">
+                <img src="assets/coin.png" alt="">
+                <h2 class="font-medium">10000 BDT</h2>
             </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200 mb-5">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it useful?</div>
-            <div class="collapse-content">
-                <p>It is use for to the page to make sure that page dosn't relode.</p>
+        </nav>
+    </header>
+    <main>
+        <h1 class="font-bold text-5xl ml-10">Important FAQ ?</h1>
+        <section class="mt-10 ml-10 mr-20">
+            <div class="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                    <p>Document Object Model is a programming method that use for programming interface for web
+                        documents.It give the structure of a webpage as a tree of objects.</p>
+                </div>
             </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200 mb-5">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style using the DOM?</div>
-            <div class="collapse-content">
-                <p>DOM is straightforward with JavaScript.So we can access DOM element using 'getElementById', 'querySelector', 'getElementsByClassName', Or changing attributes by using 'setAttribute', 'removeAttribute', and using style property.</p>
+            <div class="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>We can select an element form DOM using the attributes 'getElementById',
+                        'getElementsByClassName', 'getElementsByTagName', 'querySelector', 'querySelectorAll' etc.</p>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>It is use for to the page to make sure that page dosn't relode.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>DOM is straightforward with JavaScript.So we can access DOM element using 'getElementById',
+                        'querySelector', 'getElementsByClassName', Or changing attributes by using 'setAttribute',
+                        'removeAttribute', and using style property.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/blog.js"></script>
 </body>
 
 </html>
