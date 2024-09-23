@@ -3,4 +3,4 @@ document.getElementById('btn-blog').addEventListener('click', function(event){
     if(this.click){
        window.location.href = '/blog.html';
     }
-})
+});

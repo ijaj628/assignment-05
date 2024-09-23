@@ -19,16 +19,16 @@
             </div>
             <div class="flex items-center gap-2">
                 <img src="assets/coin.png" alt="">
-                <h2 class="font-medium">10000 BDT</h2>
+                <h2 id="main-donation" class="font-medium">10000 BDT</h2>
             </div>
         </nav>
     </header>
     <main class="bg-white mb-10">
         <div class="flex justify-center gap-4 p-20 sticky top-20 backdrop-blur-sm">
-            <button class="px-8 py-4 border border-gray-400 rounded">Donation</button>
-            <button class="px-8 py-4 border border-gray-400 rounded">History</button>
+            <button id="btn1" class="px-8 py-4 border border-gray-400 rounded bg-lime-400 font-bold">Donation</button>
+            <button id="btn2" class="px-8 py-4 border border-gray-400 rounded font-bold">History</button>
         </div>
-        <section class="mx-12">
+        <section id="donation-section" class="mx-12">
             <div class="lg:flex items-center border border-gray-400 rounded pb-10 mb-10">
                 <figure class="px-10 pt-10">
                     <img src="assets/noakhali.png" alt="" class="rounded-xl" />
@@ -36,15 +36,15 @@
                 <div class="ml-7">
                     <div class="bg-gray-100 rounded w-28 lg:w-40 pl-4 py-2 flex gap-2 mt-10 mb-4">
                         <img src="assets/coin.png" alt="">
-                        <h3>0 BDT</h3>
+                        <h3 id="account-balance">0 BDT</h3>
                     </div>
                     <h2 class="card-title mb-4 font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="mb-28 text-gray-600">Help the Noakhali Flood away people.save them by <br> your
                         donation.Your one step can save many life.</p>
-                    <input class="py-4 pl-1 pr-32 lg:pr-80 border border-gray-400 rounded mb-4" type="text" value=""
+                    <input id="add-donation" class="py-4 pl-1 pr-16 lg:pr-80 border border-gray-400 rounded mb-4" type="text" value="" autocomplete="off"
                         placeholder="Write Donation Amount">
                     <br>
-                    <button class="bg-lime-400 rounded px-28 lg:px-52 py-3">Donate Now</button>
+                    <button id="btn-donation" class="bg-lime-400 rounded px-20 lg:px-52 py-3">Donate Now</button>
                 </div>
             </div>
             <div class="lg:flex items-center border border-gray-400 rounded pb-10 mb-10">
@@ -54,15 +54,15 @@
                 <div class="ml-7">
                     <div class="bg-gray-100 rounded w-28 lg:w-40 pl-4 py-2 flex gap-2 mt-10 mb-4">
                         <img src="assets/coin.png" alt="">
-                        <h3>0 BDT</h3>
+                        <h3 id="account-balance1">0 BDT</h3>
                     </div>
                     <h2 class="card-title mb-4 font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p class="mb-28 text-gray-600">Help the Fani Flood away people.save them by <br> your
                         donation.Your one step can save many life.</p>
-                    <input class="py-4 pl-1 pr-32 lg:pr-80 border border-gray-400 rounded mb-4" type="text" value=""
+                    <input id="add-donation1" class="py-4 pl-1 pr-16 lg:pr-80 border border-gray-400 rounded mb-4" type="text" value=""
                         placeholder="Write Donation Amount">
                     <br>
-                    <button class="bg-lime-400 rounded px-28 lg:px-52 py-3">Donate Now</button>
+                    <button id="btn-donation1" class="bg-lime-400 rounded px-20 lg:px-52 py-3">Donate Now</button>
                 </div>
             </div>
             <div class="lg:flex items-center border border-gray-400 rounded pb-10">
@@ -72,20 +72,30 @@
                 <div class="ml-7">
                     <div class="bg-gray-100 rounded w-28 lg:w-40 pl-4 py-2 flex gap-2 mt-10 mb-4">
                         <img src="assets/coin.png" alt="">
-                        <h3>0 BDT</h3>
+                        <h3 id="account-balance2">0 BDT</h3>
                     </div>
                     <h2 class="card-title mb-4 font-bold">Aid for Injured in the Quota Movement</h2>
                     <p class="mb-28 text-gray-600">Help the Aid for injured  away people.save them by <br> your
                         donation.Your one step can save many life.</p>
-                    <input class="py-4 pl-1 pr-32 lg:pr-80 border border-gray-400 rounded mb-4" type="text" value=""
+                    <input id="add-donation2" class="py-4 pl-1 pr-16 lg:pr-80 border border-gray-400 rounded mb-4" type="text" value=""
                         placeholder="Write Donation Amount">
                     <br>
-                    <button class="bg-lime-400 rounded px-28 lg:px-52 py-3">Donate Now</button>
+                    <button id="btn-donation2" class="bg-lime-400 rounded px-20 lg:px-52 py-3">Donate Now</button>
                 </div>
             </div>
         </section>
+        <div id="history-section" class="hidden">
+            <h2 class=" font-bold text-4xl text-center mb-10">Transaction History</h2>
+            <div id="history-container" class="ml-10 mr-10 py-6 px-10 border border-black rounded">
+
+            </div>
+        </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/addDonation.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/subDonation.js"></script>
+    <script src="js/feature.js"></script>
 </body>
 
 </html>
