@@ -5,15 +5,19 @@ document.getElementById('btn-donation').addEventListener('click', function (even
         const balance = getTextValueById('account-balance')
         const newBalance = balance + addDonation;
         document.getElementById('account-balance').innerText = newBalance;
-        
+
         const div = document.createElement('div');
         div.innerHTML = `
-            <div class="ml-10 mr-10 mb-10 py-6 px-10 border border-black rounded">${newBalance} Taka is Donated for famine-2024 at Noakhali, Bangladesh.</div>
+            <div class="ml-10 mr-10 mb-10 py-6 px-10 border border-black rounded">${newBalance} Taka is Donated for famine-2024 at Noakhali, Bangladesh.
+            <br>
+            Date: GMT +0600 (Bangladesh Standard Time).
+            </div>
         `;
         document.getElementById('history-container').appendChild(div);
     }
     else {
         alert('Failed to add the donation.');
+        return;
     }
 });
 
@@ -25,15 +29,19 @@ document.getElementById('btn-donation1').addEventListener('click', function (eve
         const balance1 = getTextValueById('account-balance1')
         const newBalance1 = balance1 + addDonation1;
         document.getElementById('account-balance1').innerText = newBalance1;
-        
+
         const div = document.createElement('div');
         div.innerHTML = `
-            <div class="ml-10 mr-10 mb-10 py-6 px-10 border border-black rounded">${newBalance1} Taka is Donated for famine-2024 at Feni, Bangladesh.</div>
+            <div class="ml-10 mr-10 mb-10 py-6 px-10 border border-black rounded">${newBalance1} Taka is Donated for famine-2024 at Feni, Bangladesh.
+            <br>
+            Date: GMT +0600 (Bangladesh Standard Time).
+            </div>
         `;
         document.getElementById('history-container').appendChild(div);
     }
     else {
         alert('Failed to add the donation.');
+        return;
     }
 });
 
@@ -45,14 +53,18 @@ document.getElementById('btn-donation2').addEventListener('click', function (eve
         const balance2 = getTextValueById('account-balance2')
         const newBalance2 = balance2 + addDonation2;
         document.getElementById('account-balance2').innerText = newBalance2;
-        
+
         const div = document.createElement('div');
         div.innerHTML = `
-            <div class="ml-10 mr-10 mb-10 py-6 px-10 border border-black rounded">${newBalance2} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.</div>
+            <div class="ml-10 mr-10 mb-10 py-6 px-10 border border-black rounded">${newBalance2} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.
+            <br>
+            Date: GMT +0600 (Bangladesh Standard Time).
+            </div>
         `;
         document.getElementById('history-container').appendChild(div);
     }
     else {
         alert('Failed to add the donation.');
+        return;
     }
 });
