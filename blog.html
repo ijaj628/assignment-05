@@ -67,7 +67,14 @@
 
         </div>
     </footer>
-    <script src="js/blog.js"></script>
+    <script>
+        document.getElementById('btn-home').addEventListener('click', function (event) {
+            event.preventDefault();
+            if (this.click) {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
     <script src="js/feature.js"></script>
     <script src="js/subDonation.js"></script>
 </body>
