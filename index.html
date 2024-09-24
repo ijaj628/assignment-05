@@ -44,7 +44,7 @@
                     <input id="add-donation" class="py-4 pl-1 pr-16 lg:pr-80 border border-gray-400 rounded mb-4"
                         type="text" value="" autocomplete="off" placeholder="Write Donation Amount">
                     <br>
-                    <button id="btn-donation" class="bg-lime-400 rounded px-20 lg:px-52 py-3">Donate Now</button>
+                    <button id="btn-donation" class="btn bg-lime-400 rounded px-20 lg:px-52 py-3" onclick="my_modal_5.showModal()">Donate Now</button>
                 </div>
             </div>
             <div class="lg:flex items-center border border-gray-400 rounded pb-10 mb-10">
@@ -62,7 +62,7 @@
                     <input id="add-donation1" class="py-4 pl-1 pr-16 lg:pr-80 border border-gray-400 rounded mb-4"
                         type="text" value="" placeholder="Write Donation Amount">
                     <br>
-                    <button id="btn-donation1" class="bg-lime-400 rounded px-20 lg:px-52 py-3">Donate Now</button>
+                    <button id="btn-donation" class="btn bg-lime-400 rounded px-20 lg:px-52 py-3" onclick="my_modal_5.showModal()">Donate Now</button>
                 </div>
             </div>
             <div class="lg:flex items-center border border-gray-400 rounded pb-10">
@@ -80,7 +80,7 @@
                     <input id="add-donation2" class="py-4 pl-1 pr-16 lg:pr-80 border border-gray-400 rounded mb-4"
                         type="text" value="" placeholder="Write Donation Amount">
                     <br>
-                    <button id="btn-donation2" class="bg-lime-400 rounded px-20 lg:px-52 py-3">Donate Now</button>
+                    <button id="btn-donation" class="btn bg-lime-400 rounded px-20 lg:px-52 py-3" onclick="my_modal_5.showModal()">Donate Now</button>
                 </div>
             </div>
         </section>
@@ -89,6 +89,22 @@
             <div id="history-container">
 
             </div>
+        </div>
+        <div id="modal">
+            <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box grid justify-items-center">
+                    <h2 class="text-3xl font-bold mb-3">Congrates!</h2>
+                    <img src="assets/coin.png" alt="">
+                    <p class="py-4">You Have Donate for Humankind</p>
+                    <h3 class="text-lg font-bold">Successfully</h3>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button class="btn">Close Confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
     </main>
     <footer>
